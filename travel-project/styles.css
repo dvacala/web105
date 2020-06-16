@@ -1,0 +1,161 @@
+/*  
+Colors:
+    --#CEDEF2 light blue off white --use grey text
+    --#6698D9 sky blue --use black text
+    --#6588A6 dark blue dull blue --use grey text
+    --#403C01 dark olive --use white text
+    --#BFA393 beige --use grey text
+
+
+    
+Fonts
+    --font-family: 'Baloo Thambi 2', cursive;
+    --font-family: 'DM Mono', monospace;
+    --font-family: 'Open Sans', sans-serif;*/
+
+
+
+
+body {
+    background:#6588A6;
+    color: darkslategrey;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+h1{
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    color: #CEDEF2;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    text-decoration: underline;
+        color: #403C01;
+
+}
+
+h3 {
+    text-align: center;
+    font-family:'DM Mono', monospace;
+    text-decoration: underline;
+    color: #CEDEF2;
+
+}
+
+.title {
+    background: #6698D9;
+    border: 5px #CEDEF2 solid;
+    width: auto;
+    margin: 30px auto;
+    padding: 16px 32px;
+    border-radius: 80px;
+    overflow: auto;
+    color: darkslategrey;
+}
+
+.container {
+    background: #CEDEF2;
+    border: 5px #403C01 solid;
+    width: auto;
+    margin: 30px auto;
+    padding: 16px 32px;
+    border-radius: 80px;
+    overflow: auto;
+    
+}
+nav {
+    text-align: center;
+    line-height: 40px;
+}
+
+nav a, button {
+    background: #BFA393;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 24px;
+    font-size: 1.1em;
+    margin: 20px;
+    text-decoration: none;
+}
+
+nav a:hover, .button:hover {
+    background: #BFA393;
+    text-decoration: underline;
+    color: white;
+}
+
+nav a:visited, .button:visited {
+    background:#BFA393 ;
+    color:#58585c;
+}
+
+img{
+    width: 40%;
+    padding: 6px;
+    overflow: auto;
+    background: #BFA393;
+    
+}
+
+aside {
+    width: 60%;
+    clear: both;
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding: 6px 12px;
+    overflow: auto;
+    display: inline-block;
+}
+.subcontainer {
+    width: 40%;
+    margin: 5px;
+    padding: 8px 16px;
+    overflow: auto;
+    border: 3px #403C01 dotted;
+    border-radius: 20px;
+    background: #403C01;
+    color: white;
+ 
+}
+.subcontainer-left {
+    float: left;
+    width: 40%;
+    margin: 5px;
+    padding: 8px 16px;
+    overflow: auto;
+    border: 3px #403C01 dotted;
+    border-radius: 20px;
+    background: #403C01;
+    color: white;
+ 
+}
+
+.subcontainer-right {
+    float: right;
+    width: 40%;
+    margin: 5px;
+    padding: 8px 16px;
+    overflow: auto;
+    border: 3px #403C01 dotted;
+    border-radius: 20px;
+    background: #403C01;
+    color: white;
+ 
+}
+
+figcaption {
+    font-size: .8em;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
