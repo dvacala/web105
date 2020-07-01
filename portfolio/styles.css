@@ -1,0 +1,359 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  ---------------------- Variables ---------------------- */
+:root{
+    --heading-font: 'Istok Web', sans-serif;
+    --text-font:'Neuton', serif;
+    --dark-primary-color: #ca785ac2; 
+    --light-primary-color: #f5b299;
+    --primary-color: #F28B66;
+    --primary-text: #FFFFFF;
+    --accent-color: #F2A7A7;
+    --icon-text: #212121;
+    --secondary-text: #757575;
+    --divider-color: #F2E0DC;
+    --border-color: #27282b;
+}
+ /* ---------------------- layout ------------------------- */
+
+ body{
+    font-family: var(--text-font);
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* https://pixabay.com/illustrations/background-modern-computer-design-1747790/ */
+     color: var(--primary-text);
+     line-height: 1.5;
+     font-size: 1.1em;
+ }
+
+header {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+
+nav{
+    text-align: center;
+    border: 5px solid var(--border-color);
+    background: rgba(242,167,167,.7);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 18px;
+    align-content: space-between;
+}
+
+main{
+    font-size: 1.1em;
+    margin: 10px 5px;
+}
+
+aside{
+    font-size: 1.1em;
+    margin: 10px 5px;
+}
+
+.header-container{
+    width:auto;
+    border: 5px solid var(--border-color);
+    background: rgba(242,139,102,.7);
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.align-container{
+    width: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 100px;
+}
+
+
+.title {
+    max-width: 250px;    
+    overflow: auto;
+    margin:auto;
+    padding: 10px;
+    clear: both;
+    border: 5px solid var(--border-color);
+    text-align: left;
+    text-decoration: underline ;
+}
+
+.container{
+    overflow: auto;
+    width: 70%;
+    margin: 30px auto;
+    padding: 10px;
+    clear: both;
+    border: 5px solid var(--border-color);
+    text-align: left;
+    background: rgba(242,167,167,.7);
+}
+
+.img-container{
+    overflow: auto;
+    margin: 30px auto;
+    padding: 10px;
+    clear: both;
+    border: 5px solid var(--border-color);
+    text-align: left;
+    background: rgba(242,167,167,.7);
+}
+
+
+.list{
+    margin-left: 50px;
+    color: var(--primary-text);
+    list-style-type: square;
+}
+
+
+.button{
+    color: var(--icon-text);
+    border: 3px solid var(--border-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 18px;
+    background: var(--light-primary-color);
+    margin: 16px;
+    display: inline-block;
+    
+}
+
+.button:hover{
+    color: var(--icon-text);
+    background: var(--primary-color)   ;
+    text-decoration: underline;
+}
+
+
+
+.footer-container {
+    margin: 20px auto;
+    overflow: auto;
+    clear: both;
+    border: 5px solid var(--accent-color);
+    text-align: center;
+    width: 15%;
+    background: var(--dark-primary-color);
+}
+
+.copyright {    
+    margin: auto;
+    overflow: auto;
+    clear: both;
+    border: 5px solid var(--accent-color);
+    text-align: center;
+    width: 10%;
+    background: var(--dark-primary-color);
+}
+
+.center-img{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.center-text{
+    text-align: center;
+    width: 30%;
+}
+
+ 
+img{
+    box-sizing: border-box;
+    border: 5px solid var(--border-color);
+    clear: both;
+    width: 60%;
+}
+
+h1, h2{
+color: var(--text-icons);
+text-align: center;
+}
+
+p{
+    color: var(--text-icons);
+}
+
+h1 {
+    font-size: 2.2em;
+    width: auto;
+}
+
+h2{
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: var(--text-icons);
+}
+
+a{
+    color: var(--text-icons);
+    text-decoration: none;
+}
+
+dd{
+ padding-inline-start: 30px;
+}
+#right{
+    float: right;
+    width: 30%;
+    margin-right: 60px;
+}
+
+#left{
+    float: left;
+    width: 60%;
+    margin-left: 60px;
+}
+#right-half{
+    float: right;
+    width: 42%;
+}
+
+#left-half{
+    float: left;
+    width: 42%;
+}
+
+#right-column{
+    float: right;
+    width: 30%;
+    margin-right: 60px;
+}
+
+#center-column{
+    float: none;
+    width: 40%;
+}
+
+#left-column{
+    float: left;
+    width: 30%;
+    margin-left: 60px;
+}
+
+
+#pc-img{
+    width: 70%;
+}
+
+#maintitle {
+    font-size: 1.8em;
+}
+
+#bby-img {
+    width: 70%;
+}
+#cdw-img {
+    width: 80%;
+}
+
+#bold {
+    font-weight: bolder;
+}
+
+#me-img {
+    width: 50%;
+}
+#study-img {
+    width: 300%;
+    margin-left: 60px;
+}
+
+#jump-img {
+    width: 60%;
+}
+
+#plan-img{
+    width: 70%;
+}
+
+#indent{
+    text-indent: 40px;
+}
+
+#supergirl-img{
+    width: 230%;
+    margin: 30px;
+    margin-top: 56px;
+}
+
+#elena-me-img{
+    width: 230%;
+    margin: 30px;
+    margin-bottom: 56px;
+}
+
+#dominique{
+    width: 50%;
+    padding: 40px;
+}
+
+
+
+
