@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <title>Short Survey</title>
+</head>
+<body>
+    <header>
+        <h1>Short Survey</h1>
+        <p>Please take a moment to answer the following questions.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <form>
+                <h2>Get to know you:</h2>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" autofocus required placeholder="Jon"><br> 
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Snow"><br>
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" id="birthday" name="birthday" required><br>
+
+                <h2>Favorites:</h2>
+                <label for="favnum">Favorite number (between 1 and 100)</label><br>
+                <input type="number" id="favnum" name="favnum" min="1" max="100" placeholder="(1-100)"><br>
+                <label for="favcolor">Favorite color</label><br>
+                <input type="color" id="favcolor" name="favcolor"><br>
+
+                <h2>What is your ideal pet?</h2>
+                <select name="pets" id="pets">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="rock">Rock</option>
+                </select>
+
+                <h2>Please rate your experience so far in 2020.</h2>
+                <input type="radio" id="bad" name="rating" value="bad">
+                <label for="bad">It's bad. Let's skip it and pretend it never happened.</label><br>
+                <input type="radio" id="okay" name="rating" value="okay">
+                <label for="okay">It's okay. Can't complain. I am still kicking.</label><br>
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">It's good! Let's live in 2020 forever!</label><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+
+
+
+        </div>
+    
+
+    </main>
+    <footer>
+        <h3>&copy 2020 Dominique </h3>
+    </footer>
+    
+</body>
+</html>
