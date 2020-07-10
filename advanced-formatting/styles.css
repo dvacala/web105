@@ -1,0 +1,203 @@
+/* --------------------- CSS Reset -------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul, dl {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  ---------------------- Variables ---------------------- */
+
+:root{
+    --dark-primary-color: #aa2622;
+    --light-primary-color: #e47a77;
+    --primary-color: #db504a;
+    --text-icons: #565656;
+    --accent-color: #759fbc;
+    --primary-text: white;
+    --secondary-text: #000000;
+    --divider-color: #cdcdcd;  
+    --heading-font: 'Lato', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+ /* ---------------------- Layout ------------------------- */
+
+ body{
+     font-family: var(--text-font);
+     color: white;
+     background: linear-gradient(90deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 100%);
+     /*https://coolors.co/gradient-maker/c7b3cc-268ab2*/
+ }
+     
+     
+.container{
+    overflow: auto;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255, .5);
+    color: black;
+    box-shadow: 8px 8px black;
+    width: 60%;
+    margin: 60px auto;
+    padding: 10px;
+}
+
+.animation{
+    width: 60%; 
+    background-color: grey;
+    color: white;
+    animation-name: color;   
+    animation-duration: 4s;
+    margin: 0 auto;
+    text-align: center;
+    -moz-column-count: 3;
+    -moz-column-gap: 25px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 25px;
+    column-count: 3;
+    column-gap: 25px;
+    border-radius: 50px 50px 5px 50px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.flex-container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    resize: horizontal;
+    overflow: auto;
+    min-width: 50px; 
+    min-height: 50px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+
+ header, main, aside, article, div{
+     clear: both;
+ }
+
+ header{
+    text-align: center;
+    box-sizing: border-box;
+    margin: 35px auto;
+    border: var(--divider-color) solid 3px;
+    width: 80%;
+ }
+
+ footer{
+     text-align: center;
+     background: var(--dark-primary-color);
+     width: 80%;
+     margin: 20px auto;
+ }
+
+ .left{
+     float: left;
+     clear: both;
+ }
+
+ .right{
+     float: right;
+     clear: both;
+ }
+
+ .center{
+     display: block;
+     clear: both;
+ }
+
+ img{
+    box-sizing: border-box;
+    display: block;
+    width: 30%;
+    padding: 15px;
+    }
+
+    h1, h2, h3{
+        text-align: center;
+        font-family: var(--heading-font);
+    }
+
+  h1{
+      font-size: 3.5em;
+  }
+
+  h2{
+      font-size: 1.5em;
+  }
+
+  h3{
+      font-size: .9em;
+  }
+
+  p{
+      font-family: var(--text-font);
+      font-size: 1.1em;
+      padding: 15px;
+      line-height: 1.5;
+  }
+
+  a{
+      text-decoration: none;
+      color: var(--text-icons);
+  }
+
+  /* ---------------------- Animation ------------------------- */
+
+  @keyframes color {
+      from {background-color: gray;
+            color: white;}
+      to {background-color: lavender;
+            color: black;}
+  }
+
+
+
